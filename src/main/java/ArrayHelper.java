@@ -1,5 +1,11 @@
 public class ArrayHelper {
-    public MinMaxAndSum findMinMaxAndSumInArray(double[] prices) {
+    private final double[] prices;
+
+    public ArrayHelper(double[] prices) {
+        this.prices = prices;
+    }
+
+    public MinMaxAndSum findMinMaxAndSumInArray() {
         double min = Double.MAX_VALUE;
         double max = Double.MIN_VALUE;
         double sum = 0;
